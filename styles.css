@@ -20,6 +20,7 @@
 .action,
 button {
     background-color: #3882f6;
+    color: #f9faf8;
 }
 
 .info-head {
@@ -53,6 +54,11 @@ a {
     color: #e5e7eb;
 }
 
+button {
+    padding: 8px 32px;
+    border: 1px solid #f9faf8;
+}
+
 /* From here it's all about flexbox layout */
 
 
@@ -71,22 +77,20 @@ body {
 
 .hero {
     display: flex;
-    padding: 0px 100px;
-    justify-content: space-between;
+    padding: 100px;
     gap: 36px;
+    justify-content: space-between;
 }
 
-.hero img {
-    flex: 1;
-}
 
 .main {
     display: flex;
-    flex-flow: column wrap;
-    padding: 0px 100px;
+    flex-direction: column;
+    padding: 100px;
     justify-content: center;
     align-items: center;
     gap: 36px;
+    flex: 1 0 auto;
 }
 
 .container {
@@ -111,12 +115,10 @@ body {
 
 .action {
     display: flex;
-    max-width: 800px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 0px auto;
-    gap: 36px;
-    padding: 0px 100px;
+    margin: 50px 100px;
+    padding: 12px 24px;
 }
 
 .footer {
