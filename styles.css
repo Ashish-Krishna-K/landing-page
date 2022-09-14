@@ -1,0 +1,49 @@
+.header,
+.footer,
+.hero {
+    background-color: #1f2937;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.action,
+button {
+    background-color: #3882f6;
+}
+
+.info-head {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
