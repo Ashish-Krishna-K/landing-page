@@ -30,6 +30,9 @@ button {
 
 .quote {
     background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote p {
@@ -40,10 +43,84 @@ button {
 
 ul {
     list-style: none;
+    display: flex;
+    gap: 24px;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
+}
+
+/* From here it's all about flexbox layout */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.hero img {
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.container {
+    display: flex;
+    padding: 0px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.stuff {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    justify-content: center;
+}
+
+.stuff img {
+    width: 200px;
+    height: auto;
+}
+
+.action {
+    display: flex;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    gap: 36px;
+    padding: 0px 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
