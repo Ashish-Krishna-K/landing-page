@@ -32,8 +32,10 @@ button {
 .quote {
     background-color: #e5e7eb;
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
     align-items: center;
+    flex: 1;
+    padding: 50px 100px;
 }
 
 .quote p {
@@ -79,9 +81,12 @@ body {
     display: flex;
     padding: 100px;
     gap: 36px;
-    justify-content: space-between;
 }
 
+.hero img {
+    width: 500px;
+    height: auto;
+}
 
 .main {
     display: flex;
@@ -106,13 +111,17 @@ body {
     flex-direction: column;
     max-width: 200px;
     justify-content: center;
+    gap: 24px;
 }
 
 .stuff img {
     width: 200px;
     height: auto;
 }
-
+img.resize {
+    width: 200px;
+    height: 355.55px;
+}
 .action {
     display: flex;
     justify-content: space-around;
@@ -125,4 +134,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.from {
+    align-self: flex-end;
 }
