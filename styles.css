@@ -34,7 +34,7 @@ button {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    flex: 1;
+    flex: 1 0 auto;
     padding: 50px 100px;
 }
 
@@ -63,24 +63,33 @@ button {
 
 /* From here it's all about flexbox layout */
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .header {
+    flex: 1 0 auto;
     display: flex;
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
+    padding-top: 10px;
 }
 
 .hero {
+    flex: 1 0 auto;
     display: flex;
     padding: 100px;
     gap: 36px;
+    justify-content: space-between;
 }
 
 .hero img {
@@ -89,13 +98,13 @@ body {
 }
 
 .main {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 0px;
     justify-content: center;
     align-items: center;
     gap: 36px;
-    flex: 1 0 auto;
 }
 
 .container {
@@ -118,19 +127,17 @@ body {
     width: 200px;
     height: auto;
 }
-img.resize {
-    width: 200px;
-    height: 355.55px;
-}
+
 .action {
+    flex: 1 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 50px 100px;
-    padding: 12px 24px;
 }
 
 .footer {
+    flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
